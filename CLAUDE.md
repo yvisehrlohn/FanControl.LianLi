@@ -14,6 +14,10 @@ mandatory `.claude/rules/` documents.
 - Make the smallest change that proves the requested behavior. Do not add a layer,
   abstraction, configuration surface, or future roadmap unless the current feature
   needs it and an existing pattern cannot serve it.
+- Commit only a completed, reviewable behavior: its focused tests must pass, and the
+  commit must not mix unrelated cleanup, refactoring, or experiments. Run the full
+  `./build.ps1` gate before merging to `main` or opening a pull request.
+- Push only commits that are ready for review; keep incomplete work local on `dev`.
 
 ## Runtime and builds
 
